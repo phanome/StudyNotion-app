@@ -62,7 +62,7 @@ function CourseDetails() {
     setIsActive(
       !isActive.includes(id)
         ? isActive.concat([id])
-        : isActive.filter((e) => e != id)
+        : isActive.filter((e) => e !== id)
     )
   }
 
@@ -88,6 +88,7 @@ function CourseDetails() {
   }
 
   const {
+    // eslint-disable-next-line no-unused-vars
     _id: course_id,
     courseName,
     courseDescription,
